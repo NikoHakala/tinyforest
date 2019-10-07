@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigator from './Components/Navigator';
 import './App.css';
+import Home from './Components/Home';
+import Plants from './Components/Plants';
+import Sysinfo from './Components/Sysinfo';
 
-function App() {
+
+export default function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navigator />
+          <Switch>
+          <Route path="/system" component={Sysinfo}/>
+          <Route path="/plants" component={Plants}/>
+          <Route exact path="/" component={Home}/>
+          <Route render={() => <h1>Page not found</h1>}/>
+        </Switch>
+      </div>
+    </Router>
+    
   );
 }
-
-export default App;
