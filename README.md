@@ -1,3 +1,13 @@
+
+## TODO
+
+Plant page layout, what goes where and what info do we actually need in the frontend
+How to pull sysinfo, Only usefull info core temp etc.
+Fix the ModalList, Currently stacks all the pictures when modal is activated
+
+
+## React stuff
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
