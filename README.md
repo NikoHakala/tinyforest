@@ -1,9 +1,9 @@
 
 ## TODO
 
-Plant page layout, what goes where and what info do we actually need in the frontend
-How to pull sysinfo, Only usefull info core temp etc.
-Fix the ModalList, Currently stacks all the pictures when modal is activated
+Plant page layout, what goes where and what info do we actually need in the frontend.<br />
+How to pull sysinfo, Only usefull info core temp etc.<br />
+Fix the ModalList, Currently stacks all the pictures when modal is activated.<br />
 
 
 ## React stuff
