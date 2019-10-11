@@ -18,8 +18,6 @@ const ModalList = () => {
     ]
 
     const handleOpen = (e) => {
-        e.preventDefault();
-        imageList.filter((item, index) => parseInt(e.target.id) !== index)
         setOpen(true);
     };
 

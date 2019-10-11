@@ -30,11 +30,11 @@ const Plants = () => {
             <div className="plants">
     
                 <div className="plant">
-                <h6>Nimi: {plant.id}</h6>
-                <h6>Tyyppi: {plant.type}</h6>
-                <h6>Istutus päivä: {plant.istutuspv}</h6>
+                    <h6>Nimi: {plant.id}</h6>
+                    <h6>Tyyppi: {plant.type}</h6>
+                    <h6>Istutus päivä: {plant.istutuspv}</h6>
                 <img alt="Broken" src={plant.imagefile} width="200" ></img>
-                
+
                 
                 </div>
             </div>

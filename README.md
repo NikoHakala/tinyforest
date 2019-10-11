@@ -1,4 +1,3 @@
-
 ## TODO
 
 Plant page layout, what goes where and what info do we actually need in the frontend.<br />
