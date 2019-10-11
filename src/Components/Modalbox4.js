@@ -24,7 +24,7 @@ const Modalbox4 = () => {
                 onClose={handleClose}
             >
                 <div className="Modaldiv">
-                    <img alt="Broken" src='../Photos/rpiMoist.jpeg' width="800"></img>
+                    <img alt="Broken" src='../Photos/rpiMoist.jpeg' width="600"></img>
                 </div>
             </Modal>
         </div>

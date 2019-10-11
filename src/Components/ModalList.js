@@ -9,16 +9,17 @@ const ModalList = () => {
     const [open, setOpen] = React.useState(false);
 
     const imageList = [
-        { url: "../Photos/kolvaus1.jpeg", desc: "Kolvaus kuva" },
-        { url: "../Photos/rpiMoist.jpeg", desc: "rpi Vesianturi" },
-        { url: "../Photos/rpiPek.jpeg", desc: "Pekan testit" },
-        { url: "../Photos/rpiTemp.jpeg", desc: "rpi Lämpöanturi" },
-        { url: "../Photos/konstaRpi.jpeg", desc: "Konstan testit" },
-        { url: "../Photos/kokous1.jpeg", desc: "Kokous kuva" }
+        { id: "0", url: "../Photos/kolvaus1.jpeg", desc: "Kolvaus kuva" },
+        { id: "1", url: "../Photos/rpiMoist.jpeg", desc: "rpi Vesianturi" },
+        { id: "2", url: "../Photos/rpiPek.jpeg", desc: "Pekan testit" },
+        { id: "3", url: "../Photos/rpiTemp.jpeg", desc: "rpi Lämpöanturi" },
+        { id: "4", url: "../Photos/konstaRpi.jpeg", desc: "Konstan testit" },
+        { id: "5", url: "../Photos/kokous1.jpeg", desc: "Kokous kuva" }
     ]
+
     const handleOpen = (e) => {
         e.preventDefault();
-        imageList.filter((item, index) => parseInt(e.target.id ) !== index)
+        imageList.filter((item, index) => parseInt(e.target.id) !== index)
         setOpen(true);
     };
 
@@ -34,21 +35,18 @@ const ModalList = () => {
                     <button type="button" onClick={handleOpen}>
                         <img id="imageIndex" alt="Broken" src={item.url} width="250"></img>
                     </button>
-                    
-                    <Modal 
+
+                    <Modal
                         open={open}
                         onClose={handleClose}
                     >
-                        <div className="Modaldiv">
-                            <img alt="Broken" src={item.url} width="800"></img>
+                        <div  className="Modaldiv">
+                            <img id={index} alt="Broken" src={item.url} width="600" ></img>
                             <Typography variant="body1">{item.desc}</Typography>
-                            {console.log(index)}
                         </div>
-
                     </Modal>
                 </div>)
                 }
-                
             </div>
         </div>
     );

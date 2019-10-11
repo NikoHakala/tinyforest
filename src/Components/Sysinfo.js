@@ -1,15 +1,17 @@
 import React from 'react';
 
 const Sysinfo = () => {
+
+    // TODO Pull system info etc.
+
     return (
         <div>
             <div className="wrapper">
             <h2 style={{padding:10}}>System Information</h2>
-            <h6>System stats such as Kernel Uptime etc.</h6>
             <div className="sys1">
-                <h6>Systeminfo</h6>
-                <text>Temperature: 47C</text><br></br>
-                <text>Kernel: abcd123</text>
+                <h5>Systeminfo</h5>
+                <h6>Temperature: Pull system temp</h6>
+                <h6>Kernel: Pull kernel info</h6>
             </div>
             </div>
         </div>

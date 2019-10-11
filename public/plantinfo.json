@@ -1,0 +1,136 @@
+{
+    "id":             "Valkosipuli",
+    "type":           "Sipuli",
+    "description":    "Sipulilajike joka maistuu hyvältä",
+    "imagefile":      "../Photos/valkosipuli1.jpeg",
+    "logfile_output": "/path/to/plant/log/file.log",
+    "istutuspv":      "10.10.2019",
+
+  
+    "sensor": {
+      "waterpump_1": {
+        "pin":           23,
+        "pindirection":  "out",
+        "friendly_name": "Water pump (1)"
+      },
+      "nutrientpump_1": {
+        "pin":           24,
+        "pindirection":  "out",
+        "friendly_name": "Nutrient pump (1)"
+      },
+      "lightbulb_1": {
+        "pin":           18,
+        "pindirection":  "out",
+        "friendly_name": "Light bulb (1)"
+      },
+      "moisturedetect_1": {
+        "pin":           16,
+        "pindirection":  "in",
+        "friendly_name": "Moisture sensor (1)",
+        "data": {
+          "type":   "pindata",
+          "path":   "",
+          "parser": ""
+        }
+      },
+      "aciddetect_1": {
+        "pin":           26,
+        "pindirection":  "in",
+        "friendly_name": "pH sensor (1)",
+        "data": {
+          "type":   "file",
+          "path":   "/path/to/raw/device/data",
+          "parser": "name-of-internal-python-parser-function"
+        }
+      },
+      "tempdetect_1": {
+        "friendly_name": "Temperature sensor (1)"
+      },
+      "lightdetect_1": {
+        "pin":           8,
+        "pindirection":  "in",
+        "friendly_name": "Light detection sensor (1)",
+        "data": {
+          "type":   "file",
+          "path":   "/path/to/raw/device/data",
+          "parser": "name-of-internal-python-parser-function"
+        }
+      }
+    },
+  
+    "feedplant": {
+      "light": {
+        "time": {
+          "dates": ["mon, tue, wed, thu, fri, sat, sun"],
+          "clock": ["06.30-12.00","14.00-19.00"],
+          "clock_reverserange": false
+        },
+        "sensors": [ {
+          "trigger_sensor": {
+            "name":   "lightdetect_1",
+            "trigger_min": 5,
+            "trigger_max": 10
+          },
+          "activate_sensor": {
+            "name":             "lightbulb_1",
+            "ignoretrigger":    false,
+            "ignoredates":      false,
+            "ignoreclock":      false,
+            "minkeepalivetime": 5,
+            "maxkeepalivetime": 0
+          }
+        } ]
+      },
+      "nutrient": {
+        "time": {
+          "dates": ["mon, tue, wed, thu, fri, sat, sun"],
+          "clock": ["00.00-23.59"],
+          "clock_reverserange": false
+        },
+        "sensors": [ {
+          "trigger_sensor": {
+            "name":   "aciddetect_1",
+            "trigger_min": 0.9,
+            "trigger_max": 1.6
+          },
+          "activate_sensor": {
+            "name":            "nutrientpump_1",
+            "ignoretrigger":    false,
+            "ignoredates":      false,
+            "ignoreclo¿ck":      false,
+            "minkeepalivetime": 0.25,
+            "maxkeepalivetime": 5
+          }
+        } ]
+      },
+      "moisture": {
+        "time": {
+          "dates": ["mon, tue, wed, thu, fri, sat, sun"],
+          "clock": ["00.00-23.59"],
+          "clock_reverserange": false
+        },
+        "sensors": [ {
+          "trigger_sensor": {
+            "name":   "moisturedetect_1",
+            "trigger_min": 0,
+            "trigger_max": 1
+          },
+          "activate_sensor": {
+            "name":             "waterpump_1",
+            "ignoretrigger":    false,
+            "ignoredates":      false,
+            "ignoreclock":      false,
+            "minkeepalivetime": 0.25,
+            "maxkeepalivetime": 5
+          }
+        } ]
+      },
+      "temperature": {
+        "format":        "celcius",
+        "baselinevalue": 22, 
+        "threshold":     4,
+        "decimals":      3,
+        "loglevel":      0
+      }
+    }
+  }

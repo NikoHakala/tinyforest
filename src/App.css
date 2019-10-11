@@ -2,32 +2,46 @@
   text-align: center;
 }
 
+.wrapper h2{
+  font-size: 55px;
+}
+
 .wrapper{
   background: rgba(245, 245, 245, 0.6);
-  width: 60%;
+  width: 90%;
   padding: 10px;
+  font-size: 40px;
 }
 
 .plants{
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 10px;
 }
 
 .plant {
   background: rgb(240, 240, 240);
-  width: auto;
+  width: 40%;
   text-align: center;
   border: rgb(0, 0, 0) solid 1px;
+  font-size: 25px;
+}
+
+.plant h6{
+  font-size: 25px;
 }
 
 .sys1 {
+  width: 40%;
   margin-left:10px;
   margin-top:20px;
   background: rgb(240, 240, 240);
   text-align: center;
   border: rgb(0, 0, 0) solid 2px;
+}
+.sys1 h6{
+  font-size: 25px;
 }
 
 .App-logo {
@@ -54,13 +68,24 @@
   margin-top: 100px;
   margin-left: 300px;
   align-content:auto;
-  color: black;
-  background: gray;
+  color: white;
+
 }
 
 .modal-wrapper{
   display:grid;
+  grid-column-gap: 0px;
   grid-row-gap: 12px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.nav-link{
+  font-size: 30px;
+  align-content: center;
+}
+
+.navbar-brand{
+  font-size: 35px;
 
 }
