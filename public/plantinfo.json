@@ -2,7 +2,7 @@
     "id":             "Valkosipuli",
     "type":           "Sipuli",
     "description":    "Sipulilajike joka maistuu hyvältä",
-    "imagefile":      "../Photos/valkosipuli1.jpeg",
+    "imagefile":      "../Photos/valkosipulivk1.jpeg",
     "logfile_output": "/path/to/plant/log/file.log",
     "istutuspv":      "10.10.2019",
 

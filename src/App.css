@@ -13,22 +13,34 @@
   font-size: 40px;
 }
 
-.plants{
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 10px;
+.plants {
+  width: 60%;
+  display: grid;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  grid-template-columns: 1fr 1fr;
 }
 
-.plant {
+.plant1 {
   background: rgb(240, 240, 240);
-  width: 40%;
   text-align: center;
   border: rgb(0, 0, 0) solid 1px;
   font-size: 25px;
 }
 
-.plant h6{
+.plant1 h6{
+  font-size: 25px;
+}
+
+.plant2 {
+  margin-left:10px;
+  background: rgb(240, 240, 240);
+  text-align: center;
+  border: rgb(0, 0, 0) solid 1px;
+  font-size: 25px;
+}
+
+.plant2 h6{
   font-size: 25px;
 }
 
@@ -49,32 +61,12 @@
   font-size: 35px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
-
 .Modaldiv{
   width:30%;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 300px;
   align-content:auto;
   color: white;
-
 }
 
 .modal-wrapper{
@@ -82,16 +74,16 @@
   display:grid;
   grid-column-gap: 12px;
   grid-row-gap: 12px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 .nav-link{
-  font-size: 30px;
+  font-size: 35px;
   align-content: center;
 }
 
 .navbar-brand{
-  font-size: 35px;
+  font-size: 45px;
 
 }

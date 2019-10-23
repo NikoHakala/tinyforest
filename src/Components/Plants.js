@@ -20,7 +20,7 @@ const Plants = () => {
         .catch(err => console.error(err))
     }
 
-    console.log(plant.imagefile)
+    //console.log(plant.imagefile)
 
     return (
         <div>
@@ -29,13 +29,18 @@ const Plants = () => {
             <h2 style={{padding:10}}>Plant Information</h2>
             <div className="plants">
     
-                <div className="plant">
+                <div className="plant1">
                     <h6>Nimi: {plant.id}</h6>
                     <h6>Tyyppi: {plant.type}</h6>
-                    <h6>Istutus päivä: {plant.istutuspv}</h6>
+                    <h6>Istutuspäivä: {plant.istutuspv}</h6>
                 <img alt="Broken" src={plant.imagefile} width="200" ></img>
+                </div>
 
-                
+                <div className="plant2">
+                    <h6>Nimi: Kasvi2</h6>
+                    <h6>Tyyppi: Kasvi2Tyyppi</h6>
+                    <h6>Istutuspäivä: Istutuspv2</h6>
+                <img alt="Broken" src={plant.imagefile2} width="200" ></img>
                 </div>
             </div>
             </div>
