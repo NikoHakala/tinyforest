@@ -25,6 +25,7 @@ const Modalbox5 = () => {
             >
                 <div className="Modaldiv">
                     <img alt="Broken" src='../Photos/rpiPek.jpeg' width="600"></img>
+                    <p style={{background:'black', color:'gray', width:600}}>Pumput testissä</p>
                 </div>
             </Modal>
         </div>

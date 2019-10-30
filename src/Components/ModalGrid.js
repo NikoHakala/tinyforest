@@ -10,6 +10,8 @@ import Modalbox8 from './Modalbox8';
 import Modalbox9 from './Modalbox9';
 import Modalbox10 from './Modalbox10';
 import Modalbox11 from './Modalbox11';
+import Modalbox12 from './Modalbox12';
+
 
 const ModalGrid = () => {
     return (
@@ -25,6 +27,7 @@ const ModalGrid = () => {
             <Modalbox11 />
             <Modalbox7 />
             <Modalbox8 />
+            <Modalbox12 />
         </div>
     );
 };

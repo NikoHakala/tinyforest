@@ -51,7 +51,7 @@ const ModalList = () => {
                 </div>)
                 }
             </div>
-        </div>
+        </div> 
     );
 };
 

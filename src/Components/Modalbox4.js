@@ -25,6 +25,7 @@ const Modalbox4 = () => {
             >
                 <div className="Modaldiv">
                     <img alt="Broken" src='../Photos/rpiMoist.jpeg' width="600"></img>
+                    <p style={{background:'black', color:'gray', width:600}}>Kosteusensori toiminnassa</p>
                 </div>
             </Modal>
         </div>

@@ -17,7 +17,7 @@ const Navigator = () => {
                         <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/system">System information</Link>
+                        <Link className="nav-link" to="/system">System Information</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/plants">My Plants</Link>

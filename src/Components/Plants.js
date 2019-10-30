@@ -5,7 +5,7 @@ const Plants = () => {
 
     // TODO Figure out layout and what information to pull form json
     // Maby add pictures etc.
-
+    // plantinfo.json is a temporary file
 
     const [plant, setPlant] = useState([]);
 
@@ -24,7 +24,6 @@ const Plants = () => {
 
     return (
         <div>
-            
             <div className="wrapper">
             <h2 style={{padding:10}}>Plant Information</h2>
             <div className="plants">

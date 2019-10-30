@@ -25,6 +25,7 @@ const Modalbox7 = props => {
             >
                 <div className="Modaldiv">
                     <img alt="Broken" src='../Photos/valkosipulivk1.jpeg' height="500"></img>
+                    <p style={{background:'black', color:'gray', width:400}}>Valkosipulin kasvu viikko 1</p>
                 </div>
             </Modal>
         </div>

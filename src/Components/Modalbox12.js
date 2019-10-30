@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from '@material-ui/core/Modal';
 import '../App.css';
 
-const Modalbox6 = props => {
+const Modalbox12 = props => {
 
     const [open, setOpen] = React.useState(false);
 
@@ -17,15 +17,15 @@ const Modalbox6 = props => {
     return (
         <div>
             <button type="button" onClick={handleOpen}>
-                <img alt="Broken" src='../Photos/rpiTemp.jpeg' width="250"></img>
+                <img alt="Broken" src='../Photos/valkosipulivk3.jpg' width="250"></img>
             </button>
             <Modal
                 open={open}
                 onClose={handleClose}
             >
                 <div className="Modaldiv">
-                    <img alt="Broken" src='../Photos/rpiTemp.jpeg' width="600"></img>
-                    <p style={{background:'black', color:'gray', width:600}}>Pumput toiminnassa kosteusensorin kosteuden mukaan</p>
+                    <img alt="Broken" src='../Photos/valkosipulivk3.jpg' height="500"></img>
+                    <p style={{background:'black', color:'gray', width:376}}>Valkosipulin kasvu viikko 3</p>
                 </div>
             </Modal>
         </div>
@@ -33,4 +33,4 @@ const Modalbox6 = props => {
 };
 
 
-export default Modalbox6;
+export default Modalbox12;

@@ -25,6 +25,7 @@ const Modalbox1 = () => {
             >
                 <div className="Modaldiv">
                     <img alt="Broken" src='../Photos/kolvaus1.jpeg' width="600"></img>
+                    <p style={{background:'black', color:'gray', width:600}}>Johtojen pidennystä</p>
                 </div>
             </Modal>
         </div>
