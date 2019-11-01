@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigator from './Components/Navigator';
+import Navigator2 from './Components/Navigator2';
 import './App.css';
 import Home from './Components/Home';
 import Plants from './Components/Plants';
@@ -13,7 +13,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <Navigator />
+        <Navigator2 />
           <Switch>
           <Route path="/system" component={Sysinfo}/>
           <Route path="/plants" component={Plants}/>

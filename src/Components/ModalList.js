@@ -36,7 +36,7 @@ const ModalList = () => {
                 {imageList.map((item, index) =>
                 <div key={index}>
                     <button type="button" onClick={handleOpen}>
-                        <img id="imageIndex" alt="Broken" src={item.url} width="250"></img>
+                        <img id="imageIndex" alt="Broken" src={item.url} width="70%"></img>
                     </button>
 
                     <Modal
@@ -44,7 +44,7 @@ const ModalList = () => {
                         onClose={handleClose}
                     >
                         <div  className="Modaldiv">
-                            <img id={index} alt="Broken" src={item.url} width="400" ></img>
+                            <img id={index} alt="Broken" src={item.url} width='600px'></img>
                             <Typography variant="body1">{item.desc}</Typography>
                         </div>
                     </Modal>

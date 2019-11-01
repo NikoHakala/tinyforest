@@ -17,7 +17,7 @@ const Modalbox12 = props => {
     return (
         <div>
             <button type="button" onClick={handleOpen}>
-                <img alt="Broken" src='../Photos/valkosipulivk3.jpg' width="250"></img>
+                <img alt="Broken" src='../Photos/valkosipulivk3.jpg' width='80%'></img>
             </button>
             <Modal
                 open={open}
