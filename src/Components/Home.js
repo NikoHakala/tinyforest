@@ -13,17 +13,17 @@ const Home = () => {
             <div style={{width: '60%'}}>
                 <MultipleGridImages images={[
                 "../Photos/kokous1.jpeg",
-                "../photos/kolvaus1.jpeg",
-                "../photos/kolvaus2.jpg",
-                "../photos/kolvaus3.jpg",
-                "../photos/kolvaus4.jpg",
-                "../photos/konstaRpi.jpeg",
-                "../photos/rpiMoist.jpeg",
-                "../photos/rpiPek.jpeg",
-                "../photos/rpiTemp.jpeg",
-                "../photos/valkosipulivk1.jpeg",
-                "../photos/valkosipulivk2.jpg",
-                "../photos/valkosipulivk3.jpg"]}/>
+                "../Photos/kolvaus1.jpeg",
+                "../Photos/kolvaus2.jpg",
+                "../Photos/kolvaus3.jpg",
+                "../Photos/kolvaus4.jpg",
+                "../Photos/konstaRpi.jpeg",
+                "../Photos/rpiMoist.jpeg",
+                "../Photos/rpiPek.jpeg",
+                "../Photos/rpiTemp.jpeg",
+                "../Photos/valkosipulivk1.jpeg",
+                "../Photos/valkosipulivk2.jpg",
+                "../Photos/valkosipulivk3.jpg"]}/>
             </div>
         </div>
 
