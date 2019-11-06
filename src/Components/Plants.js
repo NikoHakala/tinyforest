@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
-const Plants = () => {
 
+const Plants = () => {
 
     // TODO Figure out layout and what information to pull form json
     // Maby add pictures etc.

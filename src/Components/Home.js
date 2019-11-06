@@ -9,8 +9,8 @@ import MultipleGridImages from 'react-multiple-image-grid'
 
 const Home = () => {
     return (
-        <div>
-            <div style={{width: '60%'}}>
+        <div className="home-wrapper">
+            <div className="gridimages" style={{width: '50%'}}>
                 <MultipleGridImages images={[
                 "../Photos/kokous1.jpeg",
                 "../Photos/kolvaus1.jpeg",
@@ -24,6 +24,12 @@ const Home = () => {
                 "../Photos/valkosipulivk1.jpeg",
                 "../Photos/valkosipulivk2.jpg",
                 "../Photos/valkosipulivk3.jpg"]}/>
+            </div>
+            <div className="hometext">
+                <h3>About</h3>
+                <p>
+                    Tekstiä
+                </p>
             </div>
         </div>
 

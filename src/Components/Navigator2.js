@@ -12,9 +12,9 @@ const Navigator2 = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                    <Link className="nav-link" to="/">Home</Link>
-                    <Link className="nav-link" to="/system">System Information</Link>
-                    <Link className="nav-link" to="/plants">My Plants</Link>
+                        <Link className="nav-link" to="/">Home</Link>
+                        <Link className="nav-link" to="/system">System Information</Link>
+                        <Link className="nav-link" to="/plants">My Plants</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
