@@ -1,136 +1,284 @@
 {
-    "id":             "Valkosipuli",
-    "type":           "Sipuli",
-    "description":    "Sipulilajike joka maistuu hyvältä",
-    "imagefile":      "../Photos/valkosipulivk1.jpeg",
-    "logfile_output": "/path/to/plant/log/file.log",
-    "istutuspv":      "10.10.2019",
+  "plant": {
+    "id":                "PLT01",
+    "nimi":              "Valkosipuli",
+    "type":              "Sipuli",
+    "planting_day":      "10.10.2019",
+    "short_description": "Sipulikasvi, joka maistuu hyvältä",
+    "long_description":  "Sipulikasvi, joka maistuu hyvältä ja viihtyy hyvin",
+    "imagefile":         "../Photos/valkosipulivk1.jpeg",
+    "logfile":           "/path/to/plant/log/file.log"
+  },
 
-  
-    "sensor": {
-      "waterpump_1": {
-        "pin":           23,
-        "pindirection":  "out",
-        "friendly_name": "Water pump (1)"
-      },
-      "nutrientpump_1": {
-        "pin":           24,
-        "pindirection":  "out",
-        "friendly_name": "Nutrient pump (1)"
-      },
-      "lightbulb_1": {
-        "pin":           18,
-        "pindirection":  "out",
-        "friendly_name": "Light bulb (1)"
-      },
-      "moisturedetect_1": {
-        "pin":           16,
-        "pindirection":  "in",
-        "friendly_name": "Moisture sensor (1)",
-        "data": {
-          "type":   "pindata",
-          "path":   "",
-          "parser": ""
+  "sensors": {
+
+    "moisture": {
+      "enabled":                true,
+      "sensor_type":            "common",
+      "gpio_pin":               16,
+      "gpio_pin_initialstate":  "LOW",
+      "gpio_pin_upstate":       "HIGH",
+      "sensor_friendly_name":   "Moisture sensor (1)",
+      "trigger_data_type":      "dummy_on_off",
+      "trigger_min":            0.00,
+      "trigger_max":            1.00,
+      "time": {
+        "use_time": true,
+        "months": {
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true,
+          "10": true,
+          "11": true,
+          "12": true
+        },
+        "weeks": {
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true
+        },
+        "days": {
+          "mon": { "enabled": true, "interval": ["12.00", "18.00"] },
+          "tue": { "enabled": true, "interval": ["08.00", "16.00"] },
+          "wed": { "enabled": true, "interval": ["13.00", "20.00"] },
+          "thu": { "enabled": true, "interval": ["04.00", "12.00"] },
+          "fri": { "enabled": true, "interval": ["12.00", "18.00"] },
+          "sat": { "enabled": true, "interval": ["06.00", "14.00"] },
+          "sun": { "enabled": true, "interval": ["15.00", "23.59"] }
         }
       },
-      "aciddetect_1": {
-        "pin":           26,
-        "pindirection":  "in",
-        "friendly_name": "pH sensor (1)",
-        "data": {
-          "type":   "file",
-          "path":   "/path/to/raw/device/data",
-          "parser": "name-of-internal-python-parser-function"
-        }
-      },
-      "tempdetect_1": {
-        "friendly_name": "Temperature sensor (1)"
-      },
-      "lightdetect_1": {
-        "pin":           8,
-        "pindirection":  "in",
-        "friendly_name": "Light detection sensor (1)",
-        "data": {
-          "type":   "file",
-          "path":   "/path/to/raw/device/data",
-          "parser": "name-of-internal-python-parser-function"
-        }
+      "devices_out": {
+        "common": {
+          "use_devices_out":    true,
+          "keepalivetime_min":  0.25,
+          "keepalivetime_max":  5.00
+        },
+        "devices_out_spec": [
+          {
+            "enabled":               true,
+            "gpio_pin":              23,
+            "gpio_pin_initialstate": "LOW",
+            "gpio_pin_upstate":      "HIGH",
+            "operation_type":        "irrigation",
+            "name":                  "pump_1",
+            "friendly_name":         "Water pump (1)"
+          },
+          {
+            "enabled":               true,
+            "gpio_pin":              24,
+            "gpio_pin_initialstate": "LOW",
+            "gpio_pin_upstate":      "HIGH",
+            "operation_type":        "irrigation",
+            "name":                  "pump_2",
+            "friendly_name":         "Water pump (2)"
+          }
+        ]
       }
     },
-  
-    "feedplant": {
-      "light": {
-        "time": {
-          "dates": ["mon, tue, wed, thu, fri, sat, sun"],
-          "clock": ["06.30-12.00","14.00-19.00"],
-          "clock_reverserange": false
+
+    "light": {
+      "enabled":                true,
+      "sensor_type":            "common",
+      "gpio_pin":               "",
+      "gpio_pin_initialstate":  "LOW",
+      "gpio_pin_upstate":       "HIGH",
+      "sensor_friendly_name":   "Light sensor (1)",
+      "trigger_data_type":      "i2c_device: 200",
+      "trigger_min":            0.00,
+      "trigger_max":            1.00,
+      "time": {
+        "use_time": true,
+        "months": {
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true,
+          "10": true,
+          "11": true,
+          "12": true
         },
-        "sensors": [ {
-          "trigger_sensor": {
-            "name":   "lightdetect_1",
-            "trigger_min": 5,
-            "trigger_max": 10
-          },
-          "activate_sensor": {
-            "name":             "lightbulb_1",
-            "ignoretrigger":    false,
-            "ignoredates":      false,
-            "ignoreclock":      false,
-            "minkeepalivetime": 5,
-            "maxkeepalivetime": 0
-          }
-        } ]
+        "weeks": {
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true
+        },
+        "days": {
+          "mon": { "enabled": true , "interval": ["12.00", "18.00"] },
+          "tue": { "enabled": true , "interval": ["08.00", "16.00"] },
+          "wed": { "enabled": true , "interval": ["13.00", "20.00"] },
+          "thu": { "enabled": true , "interval": ["04.00", "12.00"] },
+          "fri": { "enabled": true , "interval": ["12.00", "18.00"] },
+          "sat": { "enabled": true , "interval": ["06.00", "14.00"] },
+          "sun": { "enabled": true , "interval": ["15.00", "23.59"] }
+        }
       },
-      "nutrient": {
-        "time": {
-          "dates": ["mon, tue, wed, thu, fri, sat, sun"],
-          "clock": ["00.00-23.59"],
-          "clock_reverserange": false
+      "devices_out": {
+        "common": {
+          "use_devices_out":    true,
+          "keepalivetime_min":  5.00,
+          "keepalivetime_max":  600.00
         },
-        "sensors": [ {
-          "trigger_sensor": {
-            "name":   "aciddetect_1",
-            "trigger_min": 0.9,
-            "trigger_max": 1.6
-          },
-          "activate_sensor": {
-            "name":            "nutrientpump_1",
-            "ignoretrigger":    false,
-            "ignoredates":      false,
-            "ignoreclo¿ck":      false,
-            "minkeepalivetime": 0.25,
-            "maxkeepalivetime": 5
+        "devices_out_spec": [
+          {
+            "enabled":               true,
+            "gpio_pin":              "",
+            "gpio_pin_initialstate": "LOW",
+            "gpio_pin_upstate":      "HIGH",
+            "operation_type":        "lighting",
+            "name":                  "light_1",
+            "friendly_name":         "UV lamp (1)"
           }
-        } ]
-      },
-      "moisture": {
-        "time": {
-          "dates": ["mon, tue, wed, thu, fri, sat, sun"],
-          "clock": ["00.00-23.59"],
-          "clock_reverserange": false
+        ]
+      }
+    },
+
+    "temperature": {
+      "enabled":                true,
+      "sensor_type":            "temperature",
+      "device_type":            "THERM_SENSOR_DS18B20",
+      "device_id":              "",
+      "sensor_friendly_name":   "Temperature sensor (1)",
+      "time": {
+        "use_time": true,
+        "months": {
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true,
+          "10": true,
+          "11": true,
+          "12": true
         },
-        "sensors": [ {
-          "trigger_sensor": {
-            "name":   "moisturedetect_1",
-            "trigger_min": 0,
-            "trigger_max": 1
-          },
-          "activate_sensor": {
-            "name":             "waterpump_1",
-            "ignoretrigger":    false,
-            "ignoredates":      false,
-            "ignoreclock":      false,
-            "minkeepalivetime": 0.25,
-            "maxkeepalivetime": 5
-          }
-        } ]
+        "weeks": {
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true
+        },
+        "days": {
+          "mon": { "enabled": true , "interval": ["12.00", "18.00"] },
+          "tue": { "enabled": true , "interval": ["08.00", "16.00"] },
+          "wed": { "enabled": true , "interval": ["13.00", "20.00"] },
+          "thu": { "enabled": true , "interval": ["04.00", "12.00"] },
+          "fri": { "enabled": true , "interval": ["12.00", "18.00"] },
+          "sat": { "enabled": true , "interval": ["06.00", "14.00"] },
+          "sun": { "enabled": true , "interval": ["15.00", "23.59"] }
+        }
       },
       "temperature": {
-        "format":        "celcius",
-        "baselinevalue": 22, 
-        "threshold":     4,
-        "decimals":      3,
-        "loglevel":      0
+        "format":               "celsius",
+        "baseline":             30.00,
+        "threshold":            0.10,
+        "tolerance":            4.00,
+        "precision":            12
+      },
+      "devices_out": {
+        "common": {
+          "use_devices_out":     true,
+          "keepalivetime_min":   0.25,
+          "keepalivetime_max":   500.00
+        },
+        "devices_out_spec": [
+          {
+            "enabled":               true,
+            "gpio_pin":              25,
+            "gpio_pin_initialstate": "HIGH",
+            "gpio_pin_upstate":      "LOW",
+            "operation_type":        "warming",
+            "name":                  "warming_1",
+            "friendly_name":         "Battery (1)"
+          },
+          {
+            "enabled":               true,
+            "gpio_pin":              26,
+            "gpio_pin_initialstate": "HIGH",
+            "gpio_pin_upstate":      "LOW",
+            "operation_type":        "cooling",
+            "name":                  "cooling_1",
+            "friendly_name":         "Cooling box (1)"
+          }
+        ]
+      }
+    },
+
+    "acidity": {
+      "enabled":                true,
+      "sensor_type":            "common",
+      "gpio_pin":               "",
+      "gpio_pin_initialstate":  "LOW",
+      "gpio_pin_upstate":       "HIGH",
+      "sensor_friendly_name":   "pH sensor (1)",
+      "trigger_data_type":      "i2c_device: 200",
+      "trigger_min":            0.00,
+      "trigger_max":            1.00,
+      "time": {
+        "use_time": true,
+        "months": {
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true,
+          "10": true,
+          "11": true,
+          "12": true
+        },
+        "weeks": {
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true
+        },
+        "days": {
+          "mon": { "enabled": true , "interval": ["12.00", "18.00"] },
+          "tue": { "enabled": true , "interval": ["08.00", "16.00"] },
+          "wed": { "enabled": true , "interval": ["13.00", "20.00"] },
+          "thu": { "enabled": true , "interval": ["04.00", "12.00"] },
+          "fri": { "enabled": true , "interval": ["12.00", "18.00"] },
+          "sat": { "enabled": true , "interval": ["06.00", "14.00"] },
+          "sun": { "enabled": true , "interval": ["15.00", "23.59"] }
+        }
+      },
+      "devices_out": {
+        "common": {
+          "use_devices_out":    true,
+          "keepalivetime_min":  0.25,
+          "keepalivetime_max":  5.00
+        },
+        "devices_out_spec": [
+          {
+            "enabled":               true,
+            "gpio_pin":               "",
+            "gpio_pin_initialstate": "LOW",
+            "gpio_pin_upstate":      "HIGH",
+            "operation_type":        "fertilize",
+            "name":                  "fert_1",
+            "friendly_name":         "Fertilizer pump (1)"
+          }
+        ]
       }
     }
   }
+}

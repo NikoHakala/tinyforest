@@ -16,7 +16,7 @@ const Plants = () => {
     const jsonFetch = () => {
         fetch('../plantinfo.json')
         .then((res) => res.json())
-        .then(data => setPlant(data))
+        .then(data => setPlant(data.plant))
         .catch(err => console.error(err))
     }
 
@@ -27,19 +27,19 @@ const Plants = () => {
             <div className="wrapper">
             <h2 style={{padding:10}}>Plant Information</h2>
             <div className="plants">
-    
                 <div className="plant1">
-                    <h6>Nimi: {plant.id}</h6>
-                    <h6>Tyyppi: {plant.type}</h6>
-                    <h6>Istutuspäivä: {plant.istutuspv}</h6>
-                <img alt="Broken" src={plant.imagefile} width="200" ></img>
+                    <h5>ID: {plant.id}</h5>
+                    <h5>Nimi: {plant.nimi}</h5>
+                    <h5>Tyyppi: {plant.type}</h5>
+                    <h5>Istutuspäivä: {plant.planting_day}</h5>
+                <img alt="No_image" title={plant.short_description} src={plant.imagefile} width="200" ></img>
                 </div>
-
                 <div className="plant2">
-                    <h6>Nimi: Kasvi2</h6>
-                    <h6>Tyyppi: Kasvi2Tyyppi</h6>
-                    <h6>Istutuspäivä: Istutuspv2</h6>
-                <img alt="Broken" src={plant.imagefile2} width="200" ></img>
+                    <h5>ID: PL2ID</h5>
+                    <h5>Nimi: Kasvi2</h5>
+                    <h5>Tyyppi: Kasvi2Tyyppi</h5>
+                    <h5>Istutuspäivä: kasvi2ispv</h5>
+                <img alt="No_image" src={plant.imagefile2} width="200" ></img>
                 </div>
             </div>
             </div>

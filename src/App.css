@@ -2,17 +2,15 @@
   text-align: center;
 }
 
-.wrapper h2{
-  font-size: 55px;
-}
-
-.wrapper{
+.wrapper {
   background: rgba(245, 245, 245, 0.6);
-  width: 90%;
   padding: 10px;
-  font-size: 40px;
 }
 
+.wrapperSys {
+  background: rgba(245, 245, 245, 0.6);
+  padding: 10px;
+}
 .plants {
   width: 60%;
   display: grid;
@@ -21,44 +19,32 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.sensors {
+  display: grid;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  grid-template-columns: 1fr 1fr;
+}
+
 .plant1 {
   background: rgb(240, 240, 240);
   text-align: center;
   border: rgb(0, 0, 0) solid 1px;
-  font-size: 25px;
-}
-
-.plant1 h6{
-  font-size: 25px;
 }
 
 .plant2 {
   margin-left:10px;
   background: rgb(240, 240, 240);
   text-align: center;
-  border: rgb(0, 0, 0) solid 1px;
-  font-size: 25px;
-}
-
-.plant2 h6{
-  font-size: 25px;
+  border: rgb(0, 0, 0) solid 1px; 
 }
 
 .sys1 {
-  width: 40%;
-  margin-left:10px;
-  margin-top:20px;
+  width: 90%;
+  margin-top: 20px;
   background: rgb(240, 240, 240);
   text-align: center;
   border: rgb(0, 0, 0) solid 2px;
-}
-
-.sys1 h6{
-  font-size: 25px;
-}
-
-.sys1 h5{
-  font-size: 35px;
 }
 
 .Modaldiv{
@@ -83,17 +69,19 @@
 }
 
 .navbar-brand{
-  padding: 3px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .home-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
 }
 
 .hometext {
-  padding: 20px;
+  padding: 15px;
+}
+
+.gridimages {
+  padding: 5px;
 }
