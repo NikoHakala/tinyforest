@@ -5,11 +5,13 @@ const Sysinfo = () => {
     const [moisture, setMoisture] = useState([]);
     const [light, setLight] = useState([]);
     const [temperature, setTemperature] = useState([]);
+    const [logs, setLogs] = useState([]);
 
     useEffect(() => {
         fetchMoisture();
         fetchLight();
         fetchTemperature();
+        fetchLogs();
     }, [])
 
     const fetchMoisture = () => {
@@ -33,6 +35,15 @@ const Sysinfo = () => {
         .catch(err => console.error(err))
     }
 
+    const fetchLogs = () => {
+        fetch('../tinyforest.log.json')
+        .then((res) => res.json())
+        .then(data => setLogs(data))
+        .catch(err => console.error(err))
+    }
+
+
+    console.log(logs)
     console.log(moisture.sensor_friendly_name)
     console.log(light.sensor_friendly_name)
     console.log(temperature.sensor_friendly_name)

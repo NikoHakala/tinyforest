@@ -20,6 +20,8 @@ const Plants = () => {
         .catch(err => console.error(err))
     }
 
+    
+
     //console.log(plant.imagefile)
 
     return (

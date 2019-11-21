@@ -1,7 +1,7 @@
 ## TODO
 
-Plant page layout, what goes where and what info do we actually need in the frontend.<br />
-How to pull sysinfo, Only usefull info core temp etc.<br />
+Sysinfo layout<br />
+<br />
 
 
 ## React stuff
