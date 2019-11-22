@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 
-
 const Plants = () => {
 
     // TODO Figure out layout and what information to pull form json
@@ -8,9 +7,11 @@ const Plants = () => {
     // plantinfo.json is a temporary file
 
     const [plant, setPlant] = useState([]);
+    const [teksti, setTeksti] = useState('');
 
     useEffect(() => {
         jsonFetch();
+        txtFetch();
     }, [])
 
     const jsonFetch = () => {
@@ -20,7 +21,15 @@ const Plants = () => {
         .catch(err => console.error(err))
     }
 
-    
+    const txtFetch = () => {
+        fetch('../tekstia.txt')
+        .then((res) => res.text())
+        .then(data => setTeksti(data))
+        .catch(err => console.error(err))
+    }
+
+
+    console.log(teksti)
 
     //console.log(plant.imagefile)
 
@@ -42,7 +51,7 @@ const Plants = () => {
                     <h5>Tyyppi: Kasvi2Tyyppi</h5>
                     <h5>Istutuspäivä: kasvi2ispv</h5>
                 <img alt="No_image" src={plant.imagefile2} width="200" ></img>
-                </div>
+                </div>  
             </div>
             </div>
         </div>

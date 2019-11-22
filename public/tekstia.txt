@@ -1,0 +1,137 @@
+[22/Nov/2019 10:47:17] INFO [alarmpi: jsonreader.py, __init__ (305)]: Loaded JSON configuration for sensor 'Moisture sensor (1)'
+[22/Nov/2019 10:47:17] WARNING [alarmpi: jsonreader.py, check_devices_out (313)]: Output device 'UV lamp (1)' for sensor 'Light sensor (1)' has been disabled. Either this is intended or the device has not required GPIO pin value in JSON configuration file /etc/tinyforest/json/profile_plant1_v01.json
+[22/Nov/2019 10:47:17] WARNING [alarmpi: jsonreader.py, __init__ (313)]: Sensor 'Light sensor (1)' has been disabled. Either this is intended or the sensor has not required GPIO pin value in JSON configuration file /etc/tinyforest/json/profile_plant1_v01.json
+[22/Nov/2019 10:47:17] INFO [alarmpi: jsonreader.py, __init__ (305)]: Loaded JSON configuration for sensor 'Temperature sensor (1)'
+[22/Nov/2019 10:47:17] WARNING [alarmpi: jsonreader.py, check_devices_out (313)]: Output device 'Fertilizer pump (1)' for sensor 'pH sensor (1)' has been disabled. Either this is intended or the device has not required GPIO pin value in JSON configuration file /etc/tinyforest/json/profile_plant1_v01.json
+[22/Nov/2019 10:47:17] WARNING [alarmpi: jsonreader.py, __init__ (313)]: Sensor 'pH sensor (1)' has been disabled. Either this is intended or the sensor has not required GPIO pin value in JSON configuration file /etc/tinyforest/json/profile_plant1_v01.json
+[22/Nov/2019 10:47:17] INFO [alarmpi: jsonreader.py, __init__ (305)]: Started sensor process for sensor 'Moisture sensor (1)'
+[22/Nov/2019 10:47:17] INFO [alarmpi: jsonreader.py, __init__ (305)]: Started sensor process for sensor 'Temperature sensor (1)'
+[22/Nov/2019 10:47:30] WARNING [alarmpi: system.py, user (313)]: Running process as root. Please make sure this is intended.
+[22/Nov/2019 10:47:31] INFO [alarmpi: jsonreader.py, __init__ (305)]: Loaded JSON configuration for sensor 'Moisture sensor (1)'
+[22/Nov/2019 10:47:31] WARNING [alarmpi: jsonreader.py, check_devices_out (313)]: Output device 'UV lamp (1)' for sensor 'Light sensor (1)' has been disabled. Either this is intended or the device has not required GPIO pin value in JSON configuration file /etc/tinyforest/json/profile_plant1_v01.json
+[22/Nov/2019 10:47:31] WARNING [alarmpi: jsonreader.py, __init__ (313)]: Sensor 'Light sensor (1)' has been disabled. Either this is intended or the sensor has not required GPIO pin value in JSON configuration file /etc/tinyforest/json/profile_plant1_v01.json
+[22/Nov/2019 10:47:31] INFO [alarmpi: jsonreader.py, __init__ (305)]: Loaded JSON configuration for sensor 'Temperature sensor (1)'
+[22/Nov/2019 10:47:31] WARNING [alarmpi: jsonreader.py, check_devices_out (313)]: Output device 'Fertilizer pump (1)' for sensor 'pH sensor (1)' has been disabled. Either this is intended or the device has not required GPIO pin value in JSON configuration file /etc/tinyforest/json/profile_plant1_v01.json
+[22/Nov/2019 10:47:31] WARNING [alarmpi: jsonreader.py, __init__ (313)]: Sensor 'pH sensor (1)' has been disabled. Either this is intended or the sensor has not required GPIO pin value in JSON configuration file /etc/tinyforest/json/profile_plant1_v01.json
+[22/Nov/2019 10:47:31] INFO [alarmpi: jsonreader.py, __init__ (305)]: Started sensor process for sensor 'Moisture sensor (1)'
+[22/Nov/2019 10:47:31] INFO [alarmpi: jsonreader.py, __init__ (305)]: Started sensor process for sensor 'Temperature sensor (1)'
+[22/Nov/2019 10:47:32] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (22.25) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:47:32] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:48:01] INFO [alarmpi: sensorfunctions.py, common (305)]: Water pump (1) OFF (GPIO pin: 14, triggered by Moisture sensor (1))
+[22/Nov/2019 10:48:15] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (22.5) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:48:15] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:48:16] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (23.3125) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:48:16] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:48:17] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (24.1875) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:48:17] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:48:18] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (24.9375) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:48:18] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:48:20] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (25.625) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:48:20] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:48:21] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.1875 celsius
+[22/Nov/2019 10:48:22] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.6875 celsius
+[22/Nov/2019 10:48:23] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.9375 celsius
+[22/Nov/2019 10:48:24] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.0625 celsius
+[22/Nov/2019 10:48:32] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.375 celsius
+[22/Nov/2019 10:48:34] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.8125 celsius
+[22/Nov/2019 10:48:35] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.25 celsius
+[22/Nov/2019 10:48:36] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.625 celsius
+[22/Nov/2019 10:48:37] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.9375 celsius
+[22/Nov/2019 10:48:38] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 29.25 celsius
+[22/Nov/2019 10:48:40] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 29.4375 celsius
+[22/Nov/2019 10:48:47] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 29.3125 celsius
+[22/Nov/2019 10:48:49] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 29.1875 celsius
+[22/Nov/2019 10:48:51] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 29.0625 celsius
+[22/Nov/2019 10:48:53] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.9375 celsius
+[22/Nov/2019 10:48:56] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.8125 celsius
+[22/Nov/2019 10:48:58] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.6875 celsius
+[22/Nov/2019 10:49:00] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.5625 celsius
+[22/Nov/2019 10:49:03] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.4375 celsius
+[22/Nov/2019 10:49:06] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.3125 celsius
+[22/Nov/2019 10:49:08] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.1875 celsius
+[22/Nov/2019 10:49:11] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 28.0625 celsius
+[22/Nov/2019 10:49:13] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.9375 celsius
+[22/Nov/2019 10:49:18] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.8125 celsius
+[22/Nov/2019 10:49:21] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.6875 celsius
+[22/Nov/2019 10:49:23] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.5625 celsius
+[22/Nov/2019 10:49:29] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.4375 celsius
+[22/Nov/2019 10:49:32] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.3125 celsius
+[22/Nov/2019 10:49:37] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.1875 celsius
+[22/Nov/2019 10:49:42] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 27.0625 celsius
+[22/Nov/2019 10:49:46] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.9375 celsius
+[22/Nov/2019 10:49:51] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.8125 celsius
+[22/Nov/2019 10:49:55] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.6875 celsius
+[22/Nov/2019 10:50:01] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.5625 celsius
+[22/Nov/2019 10:50:05] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.4375 celsius
+[22/Nov/2019 10:50:12] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.3125 celsius
+[22/Nov/2019 10:50:17] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.1875 celsius
+[22/Nov/2019 10:50:19] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.0625 celsius
+[22/Nov/2019 10:50:20] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (25.875) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:50:20] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:50:24] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.0625 celsius
+[22/Nov/2019 10:50:26] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.1875 celsius
+[22/Nov/2019 10:50:27] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.3125 celsius
+[22/Nov/2019 10:50:30] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.4375 celsius
+[22/Nov/2019 10:50:32] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.5625 celsius
+[22/Nov/2019 10:50:37] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.4375 celsius
+[22/Nov/2019 10:50:44] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.3125 celsius
+[22/Nov/2019 10:50:49] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.1875 celsius
+[22/Nov/2019 10:50:55] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature is 26.0625 celsius
+[22/Nov/2019 10:51:01] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (25.9375) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:51:02] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:51:05] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (25.8125) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:51:05] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:51:13] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (25.6875) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:51:13] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:51:19] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (25.5625) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:51:19] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:51:25] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (25.4375) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:51:25] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:51:31] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (25.3125) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:51:31] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:51:37] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (25.1875) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:51:37] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:51:46] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (25.0625) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:51:46] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:51:50] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (24.9375) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:51:50] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:51:58] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (24.8125) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:51:58] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:52:06] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (24.6875) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:52:06] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:52:14] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (24.5625) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:52:14] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:52:24] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (24.4375) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:52:24] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:52:36] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (24.3125) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:52:36] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:52:42] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (24.1875) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:52:42] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:52:53] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (24.0625) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:52:53] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:53:04] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (23.9375) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:53:04] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:53:17] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (23.8125) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:53:17] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:53:27] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (23.6875) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:53:28] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:53:39] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (23.5625) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:53:39] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:53:52] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (23.4375) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:53:52] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:54:07] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (23.3125) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:54:07] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:54:26] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (23.1875) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:54:26] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:54:44] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (23.0625) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:54:44] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:55:05] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (22.9375) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:55:05] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:55:37] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (22.8125) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:55:37] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:56:00] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (22.6875) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:56:00] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:56:22] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (22.5625) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:56:22] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming
+[22/Nov/2019 10:56:56] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Temperature sensor (1): temperature (22.4375) is below tolerance value 26.0 celsius
+[22/Nov/2019 10:56:56] INFO [alarmpi: sensorfunctions.py, temperature (305)]: Battery (1) is warming

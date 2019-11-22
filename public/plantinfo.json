@@ -86,7 +86,7 @@
     "light": {
       "enabled":                true,
       "sensor_type":            "common",
-      "gpio_pin":               "",
+      "gpio_pin":               19,
       "gpio_pin_initialstate":  "LOW",
       "gpio_pin_upstate":       "HIGH",
       "sensor_friendly_name":   "Light sensor (1)",
@@ -147,6 +147,7 @@
 
     "temperature": {
       "enabled":                true,
+      "gpio_pin":               36,
       "sensor_type":            "temperature",
       "device_type":            "THERM_SENSOR_DS18B20",
       "device_id":              "",

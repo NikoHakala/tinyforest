@@ -5,8 +5,6 @@ import React from 'react';
 import MultipleGridImages from 'react-multiple-image-grid'
 
 
-// TODO fix modallist to display right item
-
 const Home = () => {
     return (
         <div className="home-wrapper">

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import LogParser from './LogParser.js';
 
 const Sysinfo = () => {
 
@@ -42,16 +43,7 @@ const Sysinfo = () => {
         .catch(err => console.error(err))
     }
 
-
     console.log(logs)
-    console.log(moisture.sensor_friendly_name)
-    console.log(light.sensor_friendly_name)
-    console.log(temperature.sensor_friendly_name)
-
-    //console.log(sensors.light)
-    //console.log(sensors.temperature)
-    //console.log(sensors.acidity)
-        
 
     // TODO Pull system info etc.
 
@@ -64,6 +56,7 @@ const Sysinfo = () => {
     //    .catch(err => console.error(err))
     //}
 
+
     return (
         <div>
             <div className="wrapperSys">
@@ -71,17 +64,23 @@ const Sysinfo = () => {
                 <div className="sensors">   
                     <div className="sys1">
                         <h5>Sensor name: {moisture.sensor_friendly_name}</h5>
+                        <h5>Moisture: 202020</h5>
                         <h5>Connected to pin: {moisture.gpio_pin}</h5>
                     </div>
                     <div className="sys1">
                         <h5>Sensor name: {light.sensor_friendly_name}</h5>
+                        <h5>Light value(dark or light): light</h5>
                         <h5>Connected to pin: {light.gpio_pin}</h5>
                     </div>
                     <div className="sys1">
                         <h5>Sensor name: {temperature.sensor_friendly_name}</h5>
+                        <h5>Temperature: 123c</h5> 
                         <h5>Connected to pin: {temperature.gpio_pin}</h5>
                     </div>
-                    
+                    <div className="sys1">
+                        <h5>Recent system logs</h5>
+                        <LogParser />
+                    </div>
                 </div> 
             </div>
         </div>
