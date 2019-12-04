@@ -1,8 +1,4 @@
-## TODO
-
-Sysinfo layout<br />
-<br />
-
+# Current build can be found at nikohakala.github.io
 
 ## React stuff
 
